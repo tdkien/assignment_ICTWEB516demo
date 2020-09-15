@@ -1,0 +1,15 @@
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong><%= task.name %>:</strong>
+          <%= task.task %>
+        </p>
+      </div>
+    </div>
+     <%= link_to 'Delete', [task.listTask, task],
+                  method: :delete, class: "button is-danger", data: { confirm: 'You want to delete?' } %>
+  </article>
+
+</div>
